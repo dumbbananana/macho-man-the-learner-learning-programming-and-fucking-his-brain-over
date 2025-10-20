@@ -7,25 +7,31 @@
     <link rel="stylesheet" href="brainfuck.css">
 </head>
 <body>
-    <div id="container" class="a1">
-        <form>
-           <div class="a2">
-            <label >admin</label>
-            <label>password</label>
-           </div>
-           <div class="a3">
-            <input id="input1" type="text">
-            <select id="input2" defaultvalue="2">
-                <option value="10">male</option>
-                <option value="18">female</option>
-                <option value="20">rather not say</option>
-            </select>
-
-           </div>
-           <button id="button">submit</button>
-            </form>
-
+<div class="container">
+    <div class="a1">
+        <label>enter your first number</label>
+        <label>enter  mathmatical function</label>
+        <label>enter your second number</label>
     </div>
-    <script src="brainfuck.js"></script>
+
+    <div class="a2">
+        <input type="number" id="num1">
+        <select id="operator">
+            <option value="+">plus +</option>
+            <option value="-">minus -</option>
+            <option value="*">muntiply *</option>
+            <option value="/">divide /</option>
+            <option value="%">reminder %</option>
+        </select>
+        <input type="number" id="num2">
+    </div>
+    <button id="btn">canculate</button>
+    <div class="result">
+        <h1 class="result1"></h1>
+    </div>
+
+    
+</div>
+<script src="brainfuck.js"></script>
 </body>
 </html>

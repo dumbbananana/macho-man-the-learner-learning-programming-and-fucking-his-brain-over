@@ -8,37 +8,64 @@ body{
     align-items: center ;
    
 
+
 }
 
-
-
-
-form{
+.container{
     display: flex;
-    gap: 10px;
-}
+    flex-wrap: wrap;
 
+    gap: 5px;
+    width: 370px;
+    height:  250px;
+    justify-content: center;
+    align-content: space;
+    
+}
+.a1{
+
+    gap: 10px;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 210px;
+    
+
+}
 
 .a2{
- display: flex;
- flex-direction: column;
- gap: 10px;
- align-items: end;
- 
- width: 110px;
 
+    gap: 10px;
+    display: flex;
+    
+    flex-wrap: wrap;
+    height: 100px;
+    width: 150px;
 }
 
-.a3{
+.result{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    overflow: scroll;
     
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 200px;
+    
+    
+
 }
 
 button{
-    border-radius: 20%;
-    background-color: brown;
-    color: aliceblue;
+    width: 310px;
+    height: 50px;
+}
+
+h1{
+    margin: 5px;
+}
+
+input{
+    width: 80px;
+    overflow: scroll;
 }
