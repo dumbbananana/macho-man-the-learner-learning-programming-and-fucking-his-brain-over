@@ -1,0 +1,44 @@
+body{
+    background-color: lightblue;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    justify-content: center;
+    align-items: center ;
+   
+
+}
+
+
+
+
+form{
+    display: flex;
+    gap: 10px;
+}
+
+
+.a2{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ align-items: end;
+ 
+ width: 110px;
+
+}
+
+.a3{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+button{
+    border-radius: 20%;
+    background-color: brown;
+    color: aliceblue;
+}
