@@ -1,13 +1,35 @@
-let username = "ashish" ;
-let password = "123@gmail.com" ;
+document.getElementById("btn").onclick = function(){
+a1 = document.getElementById("num1").value ;
+a2 = document.getElementById("operator").value ;
+a3 = document.getElementById("num2").value ;
 
-document.getElementById("button").onclick = function() {
-   userinput = document.getElementById("input1").value ;
-   passinput = document.getElementById("input2").value ;
+a11 = Number(a1);
+a22 = Number(a3);
 
-   if (username == userinput && 18 <= passinput){
-     window.alert("correct work ma nigga")
-   } else{
-    window.alert("you the dumbest nigga i know")
-   }
+if (a2 == "+"){
+  final1 = a11 + a22 ;
+  document.getElementById("result1").textContent = `${final1}`;
+}
+
+if (a2 == "-"){
+  final1 = a11 - a22 ;
+  document.getElementById("result1").textContent = `${final1}`;
+}
+
+if (a2 == "*"){
+  final1 = a11 * a22 ;
+  document.getElementById("result1").textContent = `${final1}`;
+}
+
+if (a2 == "/"){
+  final1 = a11 / a22 ;
+  document.getElementById("result1").textContent = `${final1}`;
+}
+
+if (a2 == "%"){
+  final1 = a11 % a22 ;
+  document.getElementById("result1").textContent = `${final1}`;
+}
+
+
 }
