@@ -14,10 +14,11 @@ press.onclick = function(){
     rn3 = Math.floor(Math.random () * (max) )+ (min);
      number3.textContent = rn3 ;
 
-     if (rn1==7 && rn2==7 && rn3==7){
-        window.alert("waw a jackpot");
-     }
+     document.getElementById("congrats").textContent = ` waw you ggot ${rn1} ${rn2} ${rn3}`
 
+
+
+   
   
 
 }
