@@ -1,6 +1,30 @@
-let a;
+const min = 50;
+const max = 100;
+const correct = Math.floor(Math.random() *(max - min)+ 1);
 
-a = prompt("enter a numebr" , "");
+let answer;
+let running = true;
 
-if (a) {console.log("you entered a number");}
-if (!(a)) {console.log("you didnt enter a number")};
+
+while(running){
+   answer = prompt("entera number", "");
+answer = Number(answer);
+   if(isNaN(answer)){
+     alert("no number added");
+   } 
+   
+    else if(answer === ""){
+       
+      alert("add a number");
+   } 
+   
+   else if( !(answer = correct)){
+      alert("wrong number");
+   }
+    else{
+      alert("you guessed correctly");
+      running = "";
+
+   };
+   
+};
