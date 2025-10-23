@@ -1,12 +1,18 @@
 const min = 50;
 const max = 100;
-const correct = Math.floor(Math.random() *(max - min)+ 1);
-console.log(correct);
-let answer;
+
+
 let running = true;
 
-while(running){
-   guess=prompt("please guess a number", "");
+while(running) {
+    
+   const correct = Math.floor(Math.random() *(max - min)+ 1);
+console.log(correct);
+
+ let guessed = false;
+
+while(!guessed){
+   let guess=prompt("please guess a number", "");
    
    if(guess == null){
       alert("cancelled");
@@ -23,16 +29,29 @@ while(running){
       continue;
    } 
     guess = Number(guess);
-     if(guess!==correct){
-      alert("not the correct nnumber");
+     
 
-     }else if(guess === correct){
-        alert("correct");
-        running=false;
-     } 
-     else{
-      alert("wrong");
+     if(guess < correct){
+      alert("little higher");
+     }
+
+     else if( guess > correct){
+      alert("little lower ")
      }
      
+     else if(guess === correct){
+        alert("correct");
+        guessed=true;
+
+ };
+
+ if(guessed){
+   wanna=prompt("wanna play again ?" , "");
+   if(wanna !== "yes"){
+      running=false;
+      alert("thanks for playing");
+   };
+ }
    
-};
+   }
+}
