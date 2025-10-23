@@ -6,27 +6,33 @@ let answer;
 let running = true;
 
 while(running){
-   guess=prompt("guessa number", "");
+   guess=prompt("please guess a number", "");
    
-
-   if(guess === ""){
-      alert("please enter a number");
-   }
-    else if(guess === null){
+   if(guess == null){
       alert("cancelled");
-      running=false;
-} 
+      break;
+   } 
+
+    if(guess === ""){
+      alert("no number inputed");
+      continue;}
 
 
-guess=Number(guess);
-if(isNaN(guess)){
-  alert("not a number");
-} 
-else if( guess !== correct){
-   alert("wrong guess");
-} 
-else{
-   alert("correct !!");
-   running = false;
-}
+    if(isNaN(guess)){
+      alert("please enter a number");
+      continue;
+   } 
+    guess = Number(guess);
+     if(guess!==correct){
+      alert("not the correct nnumber");
+
+     }else if(guess === correct){
+        alert("correct");
+        running=false;
+     } 
+     else{
+      alert("wrong");
+     }
+     
+   
 };
