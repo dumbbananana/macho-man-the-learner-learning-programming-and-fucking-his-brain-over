@@ -1,3 +1,6 @@
-for( let a=0; a<=15 ; a++) {
-console.log(a); 
- a == 15 ? console.log("its 15") : console.log("wewe")};
+let a;
+
+a = prompt("enter a numebr" , "");
+
+if (a) {console.log("you entered a number");}
+if (!(a)) {console.log("you didnt enter a number")};
