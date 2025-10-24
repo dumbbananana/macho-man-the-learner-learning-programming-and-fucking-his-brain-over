@@ -1,12 +1,49 @@
-let username=prompt("enter your username", "");
-yesno=prompt("do you want to make it more profelssional", "");
-if(yesno == "yes"){
-     usernamet=username.trim().slice(0,1).toUpperCase() + username.slice(1).toLowerCase();
+const correctanswer = "abc";
+const correctpassword = "123";
+let asked = 0;
 
-     alert(usernamet)
-    alert(`your username is ${username}`);
-} 
+running = true;
+while(running){
+ 
+    
+    let asking = true;
+     
+    
+    while(running){
+      let askid=prompt("enter the id" , "");
+    let askpassword=prompt("enter the password", "");
+     asked++
+      console.log(asked);
 
-  else{
-      alert(`your username is ${username}`);
-}
+
+
+    if ((askid || askpassword) == null){
+       alert("cancelled");
+       running = false;
+       break;
+    }
+
+    if ((askid || askpassword) == ""){
+        alert("you didnt enter a value");
+    }
+
+    if((askid !== correctanswer) || (askpassword !== correctpassword)){
+        alert("wrong value ");
+    } 
+    else if((askid == correctanswer) && (askpassword == correctpassword)){
+        alert("correct value inputed")
+    }
+
+    if(asked >= 5){
+        alert("you tried too many times");
+        running = false;
+        break;
+    }
+
+    
+    }
+
+    };
+
+    
+    
