@@ -26,13 +26,14 @@ body{
     text-align: center;
     border: 1px solid;
     border-radius: 10px;
+    max-width: 150px;
 }
 
 .check{
-    background-color: beige;
+   
     display: flex;
     flex-wrap: wrap;
-    width:160px;
+    width:164px;
     justify-content: start;
     align-content: center;
     gap: 2px;
@@ -58,4 +59,6 @@ body{
     font-size: 15px;
     border-radius: 10px;
     border: 1px solid;
+    max-width: 150px;
+
 }

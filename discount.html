@@ -10,13 +10,13 @@
     <div class="container">
         <input type="number" id="ogtemp">
         <div class="check">
-        <input type="checkbox">
-        <label for="checkbox" id="checkboxic">convert into cleceus</label>
-        <input type="checkbox" id="checkboxic">
+        <input type="radio" id="checkboxic">
+        <label for="checkbox" >convert into cleceus</label>
+        <input type="radio" id="checkboxif">
         <label for="checkbox">convert into faranithe</label>
         </div>
-        <button id ="button">convert</button>
-        <input type="number" readonly  id="result">
+        <button id ="button" onclick="convert()">convert</button>
+        <input type="text"   id="result" readonly>
     </div>
 </body>
 <script src="discount.js"></script>
