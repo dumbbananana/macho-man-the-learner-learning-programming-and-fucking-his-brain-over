@@ -1,53 +1,35 @@
-alert("wek will convert of f and c");
-
-let ognum = ab=Number(prompt("enter the value you want to convert ", ""));
-
-
-
- if(ognum == "")
-    
-   {
-     alert("cancelled");
-   } 
-
-     else if(isNaN(ognum))
-        {
-     alert("the calue you gave is not a number");
-     }
+let given=document.getElementById("giventemp") ;
+let checkifc=document.getElementById("checkboxic");
+let checkiff=document.getElementById("checkboxif");
+let result=document.getElementById("result");
+let temp;
 
 
+document.getElementById("button").onclick = function (){
   
+temp = Number(given.value);
+
+if(temp == "")
+{
+    alert("please enter a number ")
+
+
+}
 
 else{
-     what=prompt("what do you want to convert this inot", "");
+  
+if(checkifc.checked)
+{
+    temp = (temp - 32) * (5/9);
+    result.value = temp.toFixed(1) + "˚c";
 
-     if(what == "")
-     {
-        alert("empty no value given");
-     }
+} 
 
-     else if(what== null)
-    
-       {
-          alert("cancelled");
-       }   
+else if (checkiff.checked)
+{
+    temp = temp  * 9 / 5 + 32;
+    result.value = temp.toFixed(1) + "˚f"
 
-       else{
-
-        if(what == "f")
-        {
-          alert(`${ognum} gets turnede into f`)
-        }
-
-        if(what == "c")
-        {
-            alert(`${ognum} gets turnede into c`)
-        }
-
-        else
-        {
-            alert("unavilable")
-        }
-       }
-
+} 
+}
 };
