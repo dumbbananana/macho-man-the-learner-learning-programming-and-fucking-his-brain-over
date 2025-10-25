@@ -9,7 +9,7 @@ while(running){
     let asking = true;
      
     
-    while(running){
+    while(asking){
       let askid=prompt("enter the id" , "");
     let askpassword=prompt("enter the password", "");
      asked++
@@ -19,27 +19,28 @@ while(running){
 
     if ((askid || askpassword) == null){
        alert("cancelled");
+       asking = false;
        running = false;
        break;
     }
 
-    if ((askid || askpassword) == ""){
-        alert("you didnt enter a value");
-    }
+  
 
-    if((askid !== correctanswer) || (askpassword !== correctpassword)){
+    if(askid !== correctanswer || askpassword !== correctpassword){
         alert("wrong value ");
     } 
     else if((askid == correctanswer) && (askpassword == correctpassword)){
         alert("correct value inputed")
+        asking = false;
+        running = false;
     }
 
     if(asked >= 5){
-        alert("you tried too many times");
+        alert("to many actions");
         running = false;
         break;
-    }
 
+    }
     
     }
 
