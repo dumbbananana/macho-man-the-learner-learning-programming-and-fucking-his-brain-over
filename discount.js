@@ -1,15 +1,53 @@
- fn = prompt("enter the first number", "");
- ln = prompt("enter the last number", "");
+alert("wek will convert of f and c");
 
-if((fn || ln) == ""){
-    alert("empty value");
-} 
-if( (fn || ln) == null){
-  alert("cancelled");
-} else{
-    ln = Number(ln);
-    fn = Number(fn);
-    final = fn + ln;
-alert(final);
+let ognum = ab=Number(prompt("enter the value you want to convert ", ""));
+
+
+
+ if(ognum == "")
+    
+   {
+     alert("cancelled");
+   } 
+
+     else if(isNaN(ognum))
+        {
+     alert("the calue you gave is not a number");
+     }
+
+
+  
+
+else{
+     what=prompt("what do you want to convert this inot", "");
+
+     if(what == "")
+     {
+        alert("empty no value given");
+     }
+
+     else if(what== null)
+    
+       {
+          alert("cancelled");
+       }   
+
+       else{
+
+        if(what == "f")
+        {
+          alert(`${ognum} gets turnede into f`)
+        }
+
+        if(what == "c")
+        {
+            alert(`${ognum} gets turnede into c`)
+        }
+
+        else
+        {
+            alert("unavilable")
+        }
+       }
 
 };
