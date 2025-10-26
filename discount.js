@@ -1,43 +1,28 @@
 let rows = 
-[ 
-["apple" , "banana" , "mango"] ,
-["suppa" , "duppa" , "muppa"] ,
-["bananapie" , "smottie", " butterchicken"]
+[
+    ["a", "b"],
+    ["c", "d"],
+    ["e", "f"]
+    
 ];
+//
 
+let ask = prompt("what do you want ", "");
+for(let i = 0; i < rows.length; i++)
+{
+  
+   let ii = rows[i].indexOf(`${ask}`);
 
- let a = true;
-let b = true;
-
-while(a){
-    let ask;
-     ask = prompt("what do you want ?" ,"");
-
-while(b){
-
-    
-for( let i = 0; i<rows.length; i++){
-
-  let ii ;
-    ii = rows[i].indexOf(`${ask}`);
-   if(ii !== -1){
-    alert(`${ask} is in ${i + 1}  row and ${ii+1} columb`);
-     an=prompt("do you need anythign else ?", "");
-     if( an =="yes"){
-        break;
-
-     } else{
-        alert("exited");
-        a= false;
-        break;
-    
-     }
-   } else{
-    alert("item not found");
-    b = false;
-     break;
-
+   if(ii != -1){
+    i = ii +1;
+    ii = ii +1;
+    alert(`${ask} is found in ${ii} columb if ${i}`)
+    break;
+   } else if ( ask == null){
+    alert("cancelled")
+    break;
+   } else {
+    alert("you value is not found")
    }
 }
-}
-};
+
