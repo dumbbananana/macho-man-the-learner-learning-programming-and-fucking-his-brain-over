@@ -6,11 +6,15 @@ let rows =
     
 ];
 
+
+
+
 let a = true;
-
-
-
+while(a){
+    let b = true;
 let ask = prompt("what do you want ", "");
+while(b){
+//let ask = prompt("what do you want ", "");
 for(let i = 0; i < rows.length; i++)
 {
    
@@ -24,8 +28,9 @@ for(let i = 0; i < rows.length; i++)
     alert(`${ask} is found in ${ii} columb if ${i} row`);
     console.log(i);
     console.log(ii);
-    break;
-   } 
+    b = false;
+     a = false;
+   }  
    
     if ( ask == null){
     alert("cancelled");
@@ -40,10 +45,11 @@ for(let i = 0; i < rows.length; i++)
     console.log(ii);
     alert("empty");
     break;
-   } 
+   } else if( ii == -1){
+    alert("not found");
+    a = false;
+    
+   }
 }
-   if(a = false){
-    prompt("do you want to check again")
- 
-
+}  
 }
