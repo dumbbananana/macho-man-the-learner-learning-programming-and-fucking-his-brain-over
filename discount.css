@@ -16,14 +16,15 @@ body{
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 #a1{
    
     width: 200px;
-    height: 66.6px;
+    height: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-radius: 20px;
 
@@ -33,49 +34,10 @@ body{
 }
 
 #a1 .dot{
-    background-color: rgb(0, 0, 0);
-    height: 20px;
-    width: 20px;
+    background-color: rgb(140, 5, 5);
+    height: 30px;
+    width: 30px;
     border-radius: 50px;
     
    
-}
-
-#a2{
-    
-    width: 200px;
-    height: 66.6px;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    
-
-    
-}
-
-#a2 .dot{
-    background-color: rgb(0, 0, 0);
-    height: 20px;
-    width: 20px;
-    border-radius: 50px;
-   
-}
-
-#a3{
-   
-    height: 66.6px;
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   
-
-}
-
-#a3 .dot{
-    background-color: rgb(0, 0, 0);
-    height: 20px;
-    width: 20px;
-    border-radius: 50px;
-    
 }
