@@ -19,9 +19,9 @@ body{
 }
 
 #a1{
-    background-color: rgb(255, 251, 251);
+    
     width: 200px;
-    height: 100px;
+    height: 66.6px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,9 +41,9 @@ body{
 }
 
 #a2{
-    background-color: rgb(255, 253, 253);
+    
     width: 200px;
-    height: 100px;
+    height: 66.6px;
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -57,5 +57,29 @@ body{
     height: 20px;
     width: 20px;
     border-radius: 50px;
+    
+}
+
+#a3{
+    
+    height: 66.6px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+#a3 .dot{
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
     margin-left: 100px;
+    
 }
