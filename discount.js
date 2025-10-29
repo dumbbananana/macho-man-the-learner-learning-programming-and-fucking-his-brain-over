@@ -1,20 +1,13 @@
-while( ask == "done"){
+const balanceleft = [];
+let transaction = [];
+let ask1;
+let balance = 10000;
 
-    let ask = prompt("what do you want", "");
-    if(ask == null){
-        alert("item entered");
-        break;
-    } else {
-        ask = ask;
-    }
-    let ask1 = prompt("how many do you want ?", "");
-     if(ask1 == null){
-        alert("no digit enterrred");
-        break;
-    } else {
-        ask1 = ask1;
-    }
-}
+let ask = prompt("how much do you want to transfer ?", "");
 
-console.log(ask)
-console.log(ask1)
+ask1 = Number(ask)
+transaction.push(ask1);
+balanceleft.push((balance - transaction))
+console.log(transaction)
+console.log(balanceleft)
+
