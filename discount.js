@@ -1,13 +1,29 @@
-const balanceleft = [];
-let transaction = [];
-let ask1;
-let balance = 10000;
+let nn = [];
+let age  = [];
 
-let ask = prompt("how much do you want to transfer ?", "");
 
-ask1 = Number(ask)
-transaction.push(ask1);
-balanceleft.push((balance - transaction))
-console.log(transaction)
-console.log(balanceleft)
+function hello(backatya){
+    let ask = prompt('what si your name ?', "");
+    console.log(ask);
+    backatya();
+   
+    
+    
+}
+
+function bye(){
+   let ask2 = prompt('what is your ahe?', "");
+   ask2 = Number(ask2);
+   if(isNaN(ask2)){
+    alert("not a number");
+   } else{
+    console.log(ask2);
+   }
+
+}
+
+hello(bye);
+
+nn.push(ask);
+age.push(ask1);
 
