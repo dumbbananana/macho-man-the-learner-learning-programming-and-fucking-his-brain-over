@@ -1,29 +1,14 @@
-let nn = [];
-let age  = [];
+let entered= prompt("enter a number", "");
+entered = Number((entered));
 
 
-function hello(backatya){
-    let ask = prompt('what si your name ?', "");
-    console.log(ask);
-    backatya();
-   
-    
-    
+let oddoreven = entered.filter(alpha)
+
+function isodveen(element){
+    if(element % 2 == 0 ){
+        element = "even"
+    } else if (element %! 2 == 0){
+         element = "odd";
+
+    }
 }
-
-function bye(){
-   let ask2 = prompt('what is your ahe?', "");
-   ask2 = Number(ask2);
-   if(isNaN(ask2)){
-    alert("not a number");
-   } else{
-    console.log(ask2);
-   }
-
-}
-
-hello(bye);
-
-nn.push(ask);
-age.push(ask1);
-
