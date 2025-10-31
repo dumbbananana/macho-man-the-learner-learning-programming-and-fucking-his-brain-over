@@ -3,7 +3,8 @@
 }
 
 body{
-    background: linear-gradient(150deg, blue , rgb(101, 16, 3) );
+    background: linear-gradient(145deg , rgb(39, 1, 114) 67% , rgb(167, 57, 2));
+    
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -14,7 +15,8 @@ body{
 }
 
 .container{
-    background-color: rgba(11, 57, 57, 0.5);
+    background: linear-gradient( 145deg ,rgba(39, 1, 114, 0.2) 20% , rgba(113, 121, 2 , 0.2));
+    backdrop-filter: blur(10px);
     height: 400px;
     width: 650px;
     border-radius: 20px;
@@ -22,29 +24,49 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    backdrop-filter: (60px);
+    gap : 20px ;
+    border: 0.1px solid rgba(103, 100, 100 , 0.5 );
+    box-shadow: 2px 4px 3px 100% rgba(50, 50, 50 , 0.3);
 }
 
 
 .box{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    
+    
 }
 #textbox{
     height: 250px;
     width: 450px;
     background-color: rgba(95, 123, 148,0.6);
     border-radius: 20px;
-    border: 1px solid, rgb(126, 122, 122);
+   border: none;
    display: flex;
    justify-content: start;
    align-items: start;
    color: white;
    padding: 10px;
+   min-height: 250px;
+   max-height: 250px;
+   min-width: 450px;
+   max-width: 570px;
+   outline: none;
+   
+   resize : none;
+   scroll-behavior: smooth;
+   scrollbar-width: none;
+   
+    
+}
+
+#textbox:hover{
+    resize: both;
     
 }
 
@@ -70,6 +92,11 @@ body{
 #h1{
     width: 700px;
    
-   color: rgba(255, 255, 255 , 0.4);
+   color: rgba(255, 255, 255 , 0.3);
+   backdrop-filter: blur(1.4px);
    text-align: center;
+   font-weight: 1000;
+   text-shadow: 4px 2px 7px rgba(0, 0, 0 , 0.5);
 }
+
+
