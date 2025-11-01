@@ -1,34 +1,17 @@
-let abc  = [];
-let sagarmatha  = [];
-let kanchangunga = [];
-let final;
+const prev = [];
 
-let given =false;
-while(given == false){
-    let age = prompt("what is your age ", "");
-      age = Number(age)
-    if( age >= 18){
-        let name  = prompt("what is your name ", "");
-        let where = prompt("where do you want to go", "");
-        if ((name || where ) == ""){
-            alert("hellow world")
+let a = true;
+while(a = true){
+let num  = prompt("enter a numver","")
+if(num == null){
+     alert("cancelled")
+} else{
+    prev.push(num)
+    console.log(prev)
+    
+}
+    
 
-        }  else{
-
-           if(where == "abc"){
-            let semi = name +`-`+ where ;
-            
-            abc.push(semi)
-            
-            given = true;
-            
-         
-           }
-        }
-
-
-    }
 }
 
-
-console.log(abc)
+console.log(prev)
