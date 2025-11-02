@@ -1,21 +1,13 @@
-const id = "ashish";
-const pass = "123@";
-let = info = [];
+let fix;
 
+function a(a, b){
+    for(let i = 0; i<b ; i++){
+           fix = (a * i)**b;
 
+    }
 
+   
+    console.log(fix)
+}
 
-document.getElementById("btn").onclick = function(){
-
-    let givenuser = document.getElementById("username").value;
-    let givenpassword = document.getElementById("password").value;
-      console.log(givenuser);
-      console.log(givenpassword)
-      if((givenuser == id) || (givenpassword == pass)){
-        console.log("done")
-      } else{
-        alert("wrong")
-      }
-      info.push(givenuser , givenpassword)
-      console.log(info)
-};
+a(2 , 3);
