@@ -1,49 +1,121 @@
 body{
-    background: linear-gradient(340deg, purple , darkblue);
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(bg.png);
+    background-size: cover;
+   height: 100vh;
+   width: 100vw;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .box{
-    height: 90px;
-    width: 250px;
-    background-color: rgb(243, 240, 235);
-    border: 2px solid white;
-    border-radius: 45px;
+   background-color: rgba(16, 0, 120, 0.5);
+   backdrop-filter: blur(10px);
+   height: 500px;
+   width: 500px;
+   border: 4px solid;
+    border-color: rgba(118, 97, 97, 0.243);
+   border-radius: 90px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transition: 0.3s ease-in-out;
+
+
+}
+
+
+
+.form{
+    
     display: flex;
-    margin: 0;
-    align-items: center;
-    justify-content: start;
-    transition: 0.3s;
-}
-.slide{
-    background-color: rgb(63, 61, 61);
-    height: 85px;
-    width: 120px;
-    border-radius: 45px;
-    margin: 5px;
-    transition:   0.5s ease-in-out;
-    position: relative;
-    left: 0;
-    
-    
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+     align-items: center;
 }
 
-.box:hover{
-    background-color: rgb(63, 61, 61);
-}
-.box:hover .slide{
-    
-    left: 120px;
-    background-color: white;
-    
-    
+#username{
+    height: 50px;
+    width: 350px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-left: 10px;
+    background: rgba(146, 146, 146, 0.477);
+    font-size:20px;
+    font-weight: 300px;
+    color: rgb(255, 255, 255);
+
+
 }
 
-*{
-    scale: 0.8;
+
+#password{
+    height: 50px;
+    width: 350px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-left: 10px;
+    background: rgba(146, 146, 146, 0.477);
+      font-weight: 300px;
+    color: rgb(255, 255, 255);
+    font-size:20px;
+
+
+}
+#number{
+    height: 50px;
+    width: 350px;
+    border-radius: 20px;
+    border: 1px solid;
+    padding-left: 10px;
+    background: rgba(48, 14, 152, 0.477);
+      font-weight: 300px;
+    color: rgb(255, 255, 255);
+    font-size:20px;
+
+
+}
+#email{
+    height: 50px;
+    width: 350px;
+    border-radius: 20px;
+    border: 1px solid;
+    padding-left: 10px;
+    background: rgba(48, 14, 152, 0.477);
+      font-weight: 300px;
+    color: rgb(255, 255, 255);
+    font-size:20px;
+
+
+}
+
+
+#btn{
+    height: 50px;
+    width: 90px;
+background-color: rgba(123, 80, 80, 0.123);
+backdrop-filter: blur(10px);
+border: none;
+border-radius: 30px;
+border: 2px solid white;
+color: whitesmoke;
+margin-top: 10px;
+}
+#btn:hover{
+    background-color: rgb(68, 1, 127);
+    border: none;
+}
+
+#dhaa{
+    color: rgb(191, 190, 190);
+}
+
+#signup{
+    color: rgb(7, 164, 255);
+    text-decoration: none;
+
 }
