@@ -1,13 +1,7 @@
-let fix;
+let array = [];
+let name1 = prompt("what is your name", "");
+let ask = prompt("whay is your fav food?", "");
 
-function a(a, b){
-    for(let i = 0; i<b ; i++){
-           fix = (a * i)**b;
+array.push(ask , name1)
 
-    }
-
-   
-    console.log(fix)
-}
-
-a(2 , 3);
+console.log(array)
