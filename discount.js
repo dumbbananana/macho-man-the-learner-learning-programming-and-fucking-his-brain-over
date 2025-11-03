@@ -1,7 +1,13 @@
-let array = [];
-let name1 = prompt("what is your name", "");
-let ask = prompt("whay is your fav food?", "");
+function  plus(a , b){
+    answer = a + b ;
+    console.log(answer)
+}
 
-array.push(ask , name1)
+let ask = prompt("enter the first number" ,)
+let ask2 = prompt("enter the second number" ,)
 
-console.log(array)
+if(!(ask && ask2) == ""){
+    ask  = Number(ask);
+    ask2 = Number(ask2);
+   plus(ask , ask2)
+}
