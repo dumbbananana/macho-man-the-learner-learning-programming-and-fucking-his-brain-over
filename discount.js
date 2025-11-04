@@ -1,41 +1,46 @@
-function  plus(a , b){
-    answer = a + b ;
-    console.log(answer)
-}
-function  muntiply(a , b){
-    answer = a * b ;
-    console.log(answer)
-}
-function  divide(a , b){
-    answer = a / b ;
-    console.log(answer)
-}
-function  minus(a , b){
-    answer = a - b ;
-    console.log(answer)
-}
 
-let ask = prompt("enter the first number" ,)
-let ask2 = prompt("enter the second number" ,)
-let ask0  = prompt("what do you want to do?  ", );
+let list = [];
+let days = [];
 
-if(!(ask && ask2) == ""){
-    ask  = Number(ask);
-    ask2 = Number(ask2);
-  
 
-   if(ask0 == "add"){
-    plus(ask , ask2)
+const students = 32;
+
+let holiday = true;
+
+
+while( holiday = true){
+let attendance = 0;
+let day = 1;
+    for(day; day < 3 ; day++){
+        
+ while(attendance < students){
+
+   for(attendance; attendance < students ; attendance ++){
+
+       let attend = prompt(` day ${day}rol no ${attendance + 1}`);
+         if(attend == "p"){
+           list.push(`${attendance +1} present`)
+         }
+
+         else if(attend == "a"){
+            list.push(`${attendance + 1} abscent`)
+            
+         } else {
+            list.push(`${attendance + 1} nodata`)
+         }
+         days.push(list)
    }
 
-    if(ask0 == "minus"){
-    minus(ask , ask2)
-   }
 
-   if(ask0 == "div"){
-    divide(ask , ask2)
-   }
-   if(ask0 == "by"){
-    muntiply(ask , ask2)
-   }
+  alert(`day ${day} over`);
+ break;
+ }
 }
+}
+console.log(list)
+
+let ask=  prompt("whpse nimber dp you wanna check", "");
+ask = Number(ask)
+result = list[ask-1];
+
+console.log(result)
